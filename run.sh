@@ -37,7 +37,7 @@ echo "Starting..."
 mkdir -p $outputFolder
 
 echo "Compiling $fileName file..."
-g++ -I $includeFilePath -o $exeOutputFilePath $cppfilePath
+g++ --std=c++11 -I $includeFilePath -o $exeOutputFilePath $cppfilePath
 
 echo "Running day$1....."
 $exeOutputFilePath
