@@ -1,5 +1,8 @@
 #include <iostream>
+#include <vector>
 #include <fstream>
+
+#define PATH_MAX 4096
 
 using namespace std;
 
@@ -16,7 +19,6 @@ class InputFile {
             string eachLine;
             vector<string> input;
             while(fileInput >> eachLine) {
-                cout << eachLine;
                 input.push_back(eachLine);
             }
 

@@ -1,5 +1,7 @@
 *.o
+sample.txt
 
 bin/
 
 .vscode
+
