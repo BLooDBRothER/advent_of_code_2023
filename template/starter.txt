@@ -9,7 +9,7 @@ using namespace std;
 using namespace std::chrono;
 
 int main() {
-    vector<string> inputs = readInput("1");
+    vector<string> inputs = readInput("$dayNo");
     
     auto start = high_resolution_clock::now();
 
@@ -18,7 +18,7 @@ int main() {
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     cout << "Time Taken - "
-         << (duration.count() / 1000000.0) << " ms" << endl;
+         << (duration.count() / 1000000.0) << " sec" << endl;
 
     start = high_resolution_clock::now();
 
@@ -27,5 +27,5 @@ int main() {
     stop = high_resolution_clock::now();
     duration = duration_cast<microseconds>(stop - start);
     cout << "Time Taken - "
-         << (duration.count() / 1000000.0) << " ms" << endl;
+         << (duration.count() / 1000000.0) << " sec" << endl;
 }

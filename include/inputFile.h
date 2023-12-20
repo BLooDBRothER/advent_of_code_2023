@@ -18,7 +18,7 @@ class InputFile {
         vector<string> getInput() {
             string eachLine;
             vector<string> input;
-            while(fileInput >> eachLine) {
+            while(getline(fileInput, eachLine)) {
                 input.push_back(eachLine);
             }
 
