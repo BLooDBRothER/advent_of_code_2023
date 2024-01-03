@@ -10,15 +10,15 @@ using namespace std;
 using namespace std::chrono;
 
 int main() {
-    vector<string> inputs = readInput("7");
+    vector<string> inputs = readInput("9");
     
-    unordered_map<string, int64_t> cards_bid_map;
-	
-    parse_input(inputs, cards_bid_map);
-
     auto start = high_resolution_clock::now();
 
-    cout << "--- Part 1 --- \n" << part1::total_winnings(cards_bid_map) << endl;
+    vector<vector<int64_t>> report_values;
+
+    parse_input(inputs, report_values);
+
+    cout << "--- Part 1 --- \n" << part1::sum_next_value(report_values) << endl;
     
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
@@ -27,7 +27,7 @@ int main() {
 
     start = high_resolution_clock::now();
 
-    cout << "--- Part 2 --- \n" << part2::total_winnings(cards_bid_map) << endl;
+    cout << "--- Part 2 --- \n" << part2::sum_next_value(report_values) << endl;
 
     stop = high_resolution_clock::now();
     duration = duration_cast<microseconds>(stop - start);

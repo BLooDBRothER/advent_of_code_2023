@@ -11,7 +11,6 @@ using namespace std::chrono;
 
 int main() {
     vector<string> inputs = readInput("6");
-    // vector<string> inputs = readInput("6", "sample");
 
     vector<pair<int64_t, int64_t>> time_distance_pairs;
 

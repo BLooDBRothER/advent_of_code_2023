@@ -11,7 +11,6 @@ using namespace std::chrono;
 
 int main() {
     vector<string> inputs = readInput("8");
-    // vector<string> inputs = readInput("8", "sample2");
 
 	string command;
 	unordered_map<string, pair<string, string>> networks;
